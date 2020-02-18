@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 25 20:33:08 2019
+Created on Tue Feb 18 19:37:45 2020
 
 @author: kisch
 """
+
 
 import unittest
 
@@ -28,6 +29,11 @@ class TestTriangleMaximum(unittest.TestCase):
         
     def test_find_triagnle_maximum(self):        
         ex = 23
+        self.assertEqual(ex, self.tm.find_triangle_maximum(3))
+        
+    def test_find_triagnle_maximum_p18(self):        
+        self.tm.import_triangle("the_triangle_18.txt")
+        ex = 1074
         self.assertEqual(ex, self.tm.find_triangle_maximum(3))
         
     def test_get_all_sums(self):

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Nov 25 20:16:13 2019
+Created on Tue Feb 18 19:37:45 2020
 
 @author: kisch
 """
@@ -15,11 +15,11 @@ print("Calculation started")
 
 
 tm = TM()
-tm.import_triangle("the_triangle.txt")
+tm.import_triangle("the_triangle_67.txt")
 
 answers = []
 
-for depth in range(1,16):
+for depth in range(1,20):
     val = tm.find_triangle_maximum(depth=depth)
     answers.append(val)
     print("Depth = ", depth, "\tSum = ", val)
